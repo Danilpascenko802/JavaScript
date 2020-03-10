@@ -1,3 +1,4 @@
+"use strict" ;
 console.log('tusk 1');
 let name = 'Генератор защитного поля';
 let cost = '1000';
