@@ -1,5 +1,5 @@
 "use strict";
-console.log("tusk1")
+console.log("TUSK_1")
 let var1 = 10;
 let var2 = 20;
 let var3 = 30;
