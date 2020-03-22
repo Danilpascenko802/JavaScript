@@ -35,18 +35,19 @@ const alfa = 0.2;
 const beta = 0.4;
 console.log((alfa*10 + beta*10)/10);
 
-// console.log('TUSK_3.4');
-// let tetra = 12px ;
-// console.log(tetra);
-// tetra = 13.34em;
-// console.log(tetra);
+console.log('TUSK_3.4');
+let tetra = 12px ;
+console.log(tetra);
+tetra = 13.34em;
+console.log(tetra);
 
 console.log("TUSK_3.5");
 console.log(Math.max(2, 34, 99, 3, 22, 36, 733, 18));
 console.log(Math.min(2, 34, 99, 3, 22, 36, 733, 18));
 
 console.log('TUSK_3.6');
-let random ;
-console.log(Math.random(random)* (4-1) +15);
+let random = (Math.random() * (19-3) + 3);
+random = random.toFixed(2)
+console.log(random)
 
 
