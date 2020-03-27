@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // const arr = [];
 // console.log(arr);
 // const students = ["Danil", "David", "Polina", "Vika"];
@@ -61,21 +61,21 @@
 // let studentName ;
 // console.log("Имя студента",studentName);
 // const studentNew = [
-    //     "Roy",
-    //     "Nick",
-    //     "Helen",
+//         "Roy",
+//         "Nick",
+//         "Helen",
     
-    // ];
-    // console.log("Список студентов", studentNew);
-    // studentName = prompt("enter name");
+//     ];
+//     console.log("Список студентов", studentNew);
+//     studentName = prompt("enter name");
     
-    // for (const student of studentNew){
-        //     if(student === studentName){
-            //         massage = "Все нормас ты есть в базе данных";
-            //         break;
-            //     }
-            //     massage = "Ты дыбиу тебя tута нету иди Атсюда!";
-            // }
+//     for (const student of studentNew){
+//             if(student === studentName){
+//                     massage = "Все нормас ты есть в базе данных";
+//                     break;
+//                 }
+//                 massage = "Ты дыбиу тебя tута нету иди Атсюда!";
+//             }
 // console.log(`${studentName}, ${massage}`);
 
 

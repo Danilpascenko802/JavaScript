@@ -1,6 +1,16 @@
 "use strict";
 let day = prompt("Enter today day please");
 let weekday;
+const weekdays= ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" ];
+
+for (const day of weekdays) {
+  if day === weekdays {
+    
+  }
+}
+
+ 
+
 
 switch (day) {
     case "Monday":
@@ -19,12 +29,12 @@ switch (day) {
     weekday = "a strange workday";
     break;
  
-  case "Friday":
+    case "Friday":
     weekday = "the best workday";
     break;
  
-  case "Saturday":
-  case "Sunday":
+    case "Saturday":
+    case "Sunday":
       weekday = "holiday";
       break;
  
@@ -34,3 +44,4 @@ switch (day) {
 }
 
 console.log(`${day} is ${weekday}`);
+
