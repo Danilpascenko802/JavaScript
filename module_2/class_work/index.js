@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 // const arr = [];
 // console.log(arr);
 // const students = ["Danil", "David", "Polina", "Vika"];
@@ -181,3 +181,186 @@
 // let god;
 // console.log(qw**er);
 
+
+
+
+
+
+
+
+//* ***************** 2 урок *******************************************
+
+// let a = 5;
+// let b = a;
+// console.log(a);
+// console.log(b);
+// a = 10;
+// console.log(a);
+// console.log(a);
+// console.log(b);
+
+// let lastName = "BlaBla";
+// let newLastName = lastName;
+// console.log(lastName);
+// console.log(newLastName);
+//  lastName = "13kl;d";
+ 
+// console.log(lastName);
+// console.log(newLastName);
+
+
+
+// const units = [ "alfa", "beta", "gamma"];
+// const newUnits = units;
+
+// console.log(units);
+// console.log(newUnits);
+
+// units[0] = "1";
+// console.log(units);
+// console.log(newUnits);
+
+
+
+// units.push("delta");
+// console.log(units);
+// console.log(newUnits);
+
+// newUnits.unshift("epslion");
+// console.log(units);
+// console.log(newUnits);
+
+// units.pop("")
+// console.log(units);
+
+
+// newUnits.shift();
+// console.log(units);
+// console.log(newUnits);
+
+// console.log(units.join(", "));
+
+
+// const massage = "Welcome to my world!";
+// console.log(massage.split(" "));
+// console.log(massage.split("w"));
+// console.log(massage.split(""));
+
+// console.log(units.indexOf("beta"));
+
+// console.log(massage.includes("to"));
+// console.log(massage.includes("WORLD"));
+
+
+// const fruit = "apple";
+// if (fruit === "apple" || fruit === "strwberry" ){
+//     console.log.length("its a red fruit");
+// }
+
+
+
+
+
+
+// const redFruits = ["apple", "strawberry" , "chery"];
+// const fruit2 = prompt("Enter a fruit");
+// if (redFruits.includes(fruit)){
+//     console.log("its a red fruit");
+// }else{
+//     console.log("its a not red fruit");
+// }
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!*!*!*!*!*!**!*!***!*!*!**!*!****************!!!!
+
+// const nuumList = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(nuumList.slice(0, 3));
+// console.log(nuumList.slice(1, 2));
+// console.log(nuumList.slice(1, 5));
+// console.log(nuumList.slice());
+// console.log(nuumList.slice(3));
+// console.log(nuumList.slice(5));
+// console.log(nuumList.slice(-2));
+
+
+// const newNumlist = nuumList.slice(-5);
+// console.log("newNumlist", newNumlist);
+
+// .splice !!!!!!!!!!!!!!!
+
+// УДОЛЯЕТ
+// console.log("nuumList", nuumList);
+// console.log(nuumList.splice(0, 2));
+// console.log("nuumList", nuumList);
+
+// const newNewNumList = nuumList.splice(3, 4);
+// console.log("newNewNumList", newNewNumList)
+// console.log("nuumList", nuumList);
+
+
+// // ДОБОВЛЯЕТ ВСТАВЛЯЕТ
+// console.log( "numList", nuumList.splice(0, 0, 12));
+// console.log( "numList", nuumList)
+
+// console.log( "numList", nuumList.splice(5, 0, 1, 45,));
+// console.log( "numList", nuumList)
+
+// console.log( "numList", nuumList.splice(9, 0, 1, 45, 35, 4546464,21));
+// console.log( "numList", nuumList)
+
+// // ЗАМЕНЯЕТ
+// console.log( "numList", nuumList.splice(3, 1, "JS"));
+// console.log( "numList", nuumList)
+
+// console.log( "numList", nuumList.splice(3, 3, "JS", "C++", "C#"));
+// console.log( "numList", nuumList)
+
+
+// const arr1 = ["Hello"];
+// const arr2 = ["World"];
+// const lang = arr1.concat(arr2);
+// console.log(lang.join(", "));
+
+
+// const test1 = [4, 12, 6, 16, 13, 8, 13, 4, 15, 11, 14, 10, 15, 12];
+// const test2 =["17", 13, 4, 15, 10, 12, 16, 21, 13, 8, 14, 18, 15, 20];
+// const test3 = ["20", 12, 16, 22, 13, 8, 13, 4, 15, 10, 14, 18, 15, 22];
+
+// const allTests = test1.concat(test2).concat(test3);
+// console.log(allTests)
+
+// FUNCTION
+
+const add = function(a, b, c){
+    return a + b + c;
+};
+
+const result = add(3, 5, 1);
+console.log(result);
+
+console.log(add(5, 7, 13));
+
+
+const fn1 = function(){
+    console.log("first fn");
+    fn2();
+    console.log("Продолжение 1-й fn");
+}
+
+const fn2 = function(){
+    console.log("second fn");
+
+}
+console.log("start reading main code");
+fn1();
+console.log("continue doing main code after exit from rirst fn");
+
+
+
+const count = function(a = 0, b= 10, c = 1) {
+    console.log(`countFrom = ${a}, countTo = ${b}, step = ${c}`);
+
+    for (let i = a; i <=b; i += c){
+        console.log(i);
+    }
+};
+count(1, 5);
