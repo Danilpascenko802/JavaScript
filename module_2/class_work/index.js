@@ -328,39 +328,80 @@
 // const allTests = test1.concat(test2).concat(test3);
 // console.log(allTests)
 
-// FUNCTION
+// ****************************************FUNCTION*********************************************
 
-const add = function(a, b, c){
-    return a + b + c;
-};
+// const add = function(a, b, c){
+//     return a + b + c;
+// };
 
-const result = add(3, 5, 1);
-console.log(result);
+// const result = add(3, 5, 1);
+// console.log(result);
 
-console.log(add(5, 7, 13));
-
-
-const fn1 = function(){
-    console.log("first fn");
-    fn2();
-    console.log("Продолжение 1-й fn");
-}
-
-const fn2 = function(){
-    console.log("second fn");
-
-}
-console.log("start reading main code");
-fn1();
-console.log("continue doing main code after exit from rirst fn");
+// console.log(add(5, 7, 13));
 
 
+// const fn1 = function(){
+//     console.log("first fn");
+//     fn2();
+//     console.log("Продолжение 1-й fn");
+// }
 
-const count = function(a = 0, b= 10, c = 1) {
-    console.log(`countFrom = ${a}, countTo = ${b}, step = ${c}`);
+// const fn2 = function(){
+//     console.log("second fn");
 
-    for (let i = a; i <=b; i += c){
-        console.log(i);
-    }
-};
-count(1, 5);
+// }
+                
+// console.log("start reading main code");
+// fn1();
+// console.log("continue doing main code after exit from rirst fn");
+
+
+
+// const count = function(a = 0, b= 10, c = 1) {
+//     console.log(`countFrom = ${a}, countTo = ${b}, step = ${c}`);
+
+//     for (let i = a; i <=b; i += c){
+//         console.log(i);
+//     }
+// };
+// count(1, 5);
+
+// const myFunction = function(a,b,c){
+//     return a + b + c ;
+// }
+// const myArrowFunction = (a,b,c) => {a+b+c;
+// console.log(myArrowFunction);
+
+// }
+
+// const sum = function(){
+//     total = 0;
+
+
+
+// for (const argument of arguments ){
+//     total += argument;
+//     total = total + argument;
+//     console.log(argument, total);
+// }
+// return total;
+// console.log(sum(1, 2, 3, 4 ,5 ,6));
+// }
+
+
+
+// const functionName = function(d,b,c){
+
+// }
+
+
+// const arrowFunction = (parameters) => a + b + c; {
+
+// };
+// arrowFunction(arguments);
+
+// condition ? 
+
+
+
+

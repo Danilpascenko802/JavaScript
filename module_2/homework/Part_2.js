@@ -49,15 +49,33 @@ console.log(doubleResults);
 
 
 console.log("TUSK_6")
-for (let i = 0; i < doubleResults.length; i += 1) {
-    if (i % 2 === 0){
-        continue;
-        console.log(doubleResults[i]);
-    }
-    if ((i % 2) > 0){
-        continue;
-        console.log(doubleResults[i])
-        
+
+let oldResults = [];
+let evenResults = [];
+
+for (let i = 0; i < doubleResults.length; i += 1){
+    
+doubleResults[i] % 2 != 0 ? oldResults.unshift(doubleResults[i]) : evenResults.unshift(doubleResults[i]);
+    // if (doubleResults[i] % 2 != 0 ){
+    //     oldResults.unshift(doubleResults[i]);
+    // }else {
+    //     evenResults.unshift(doubleResults[i]);
+    // }
+}
+console.log(oldResults);
+console.log(evenResults);
+
+console.log("TUSK_7")
+
+const allResults = oldResults.concat(evenResults);
+console.log("allResults", allResults);
+
+let includeOne = [];
+for (let i = 0; i < allResults.length; i += 1){
+    let item = allResults[i] + "";
+    console.log(item);
+    if (item.includes(1)) { 
+        includeOne.push(+item)
     }
 }
-
+console.log("includesOne", includeOne);
