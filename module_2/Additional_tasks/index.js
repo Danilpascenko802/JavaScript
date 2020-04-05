@@ -73,21 +73,21 @@ console.log(
 console.log("TUSK_4");
 let string;
 
-const formatString = function(string){     // 1 вариант не фурычит :(
-  string.substr(0,40);
-}
-string.push("...");
+// const formatString = function(string){     // 1 вариант не фурычит :(
+//   string.substr(0,40);
+// }
+// string.push("...");
 
 
 
-const formatString = function(string){ // 2 выриант тоже не фурычит :(
-  if(string.length > 40){
-    string.push("...");
-    console.log(string);
-  }else{
-    console.log(string);
+// const formatString = function(string){ // 2 выриант тоже не фурычит :(
+//   if(string.length > 40){
+//     string.push("...");
+//     console.log(string);
+//   }else{
+//     console.log(string);
 
-  }
+//   }
 
 
 
