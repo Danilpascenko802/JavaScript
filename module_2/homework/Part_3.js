@@ -1,9 +1,12 @@
 "use strict";
-const fn = () => {
-    return let = alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!")
+console.log("Tusk_1");
+
+const toPassTest = function(){
+let modalwindow = alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!")
 };
 
+// const toPassTest2 = () => ;
 
-// const toPassTest = function(){
-//  return let = alert("Прежде, чем выполнить это задание у тебя должно быть сдано пять тестов!")
-// };
+
+
+console.log(toPassTest());
