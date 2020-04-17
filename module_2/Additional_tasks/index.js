@@ -59,13 +59,13 @@ const findLongestWord = function(str) {
   }
 };
 console.log(
-  findLongestWord("And by opposing end them. To die—to sleep, No more; and by a sleep to say we end") // все норм
+  findLongestWord("And by opposing end them. To die—to sleep, No more; and by a sleep to say we end") 
 ); 
 console.log(
-  findLongestWord("The heart-ache and the thousand natural shocks That flesh is heir to: 'tis a consummation") // не фурычит
+  findLongestWord("The heart-ache and the thousand natural shocks That flesh is heir to: 'tis a consummation") 
 ); 
 console.log(
-  findLongestWord("Devoutly to be wish'd. To die, to sleep; To sleep, perchance to dream—ay, there's the rub:") // все норм
+  findLongestWord("Devoutly to be wish'd. To die, to sleep; To sleep, perchance to dream—ay, there's the rub:") 
 ); 
 
 
@@ -73,28 +73,16 @@ console.log(
 console.log("TUSK_4");
 let string;
 
-// const formatString = function(string){     // 1 вариант не фурычит :(
-//   string.substr(0,40);
-// }
-// string.push("...");
+const formatString = function(string){  
+  let string2 = string.split("");
+  if(string.length >= 40){
+    string2.splice(40, string2.length - 40, "...");
+    string = string2.join("");
+  }
+  return string;
+}
+console.log(formatString("Curabitur ligula sapien, tincidunt non."));
 
+console.log(formatString("Vestibulum facilisis purus nec pulvinar iaculis."));
 
-
-// const formatString = function(string){ // 2 выриант тоже не фурычит :(
-//   if(string.length > 40){
-//     string.push("...");
-//     console.log(string);
-//   }else{
-//     console.log(string);
-
-//   }
-
-
-
-
-
-// console.log(formatString("Curabitur ligula sapien, tincidunt non."));
-
-// console.log(formatString("Vestibulum facilisis purus nec pulvinar iaculis."));
-
-// console.log(formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."));
+console.log(formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."));

@@ -1,162 +1,162 @@
 "use strict";
-// // OBJECT 
-// const odject = {
-//     key: value,
-//     key: vlaue,
-// }
+// OBJECT 
+const odject = {
+    key: value,
+    key: vlaue,
+}
 
-// const frontend = {
-//     language_1: "HTML",
-//     language_2: "CSS",
-//     language_3:"JS",
-// };
-// console.log("frontend", frontend);
+const frontend = {
+    language_1: "HTML",
+    language_2: "CSS",
+    language_3:"JS",
+};
+console.log("frontend", frontend);
 
-// const student = {
-//     name: "Danya",
-//     lastName: "Paschenko",
-//     age: 14,
-//     sex: "male",
-//     course: frontend,
-// }
-// console.log("student", student);
-// console.log(student.name);
-// console.log(student.age);
-// console.log(student.course);
+const student = {
+    name: "Danya",
+    lastName: "Paschenko",
+    age: 14,
+    sex: "male",
+    course: frontend,
+}
+console.log("student", student);
+console.log(student.name);
+console.log(student.age);
+console.log(student.course);
 
-// console.log(frontend["language_1"]);
-// console.log(frontend["language_2"]);
-// console.log(frontend["language_3"]);
+console.log(frontend["language_1"]);
+console.log(frontend["language_2"]);
+console.log(frontend["language_3"]);
 
-// student.lastName = "LOH!";
-// console.log(student.lastName);
-//  student["lastName"] = "LoH";
-// console.log(student["lastName"]);
-
-
-// student.address = "No where";
-// console.log(student)
-
-// delete frontend.language_1;
-// console.log(frontend);
+student.lastName = "LOH!";
+console.log(student.lastName);
+ student["lastName"] = "LoH";
+console.log(student["lastName"]);
 
 
+student.address = "No where";
+console.log(student)
 
-// // console.log(course);
-// // console.log(console.log(console.log("hsdvhsbdvkbsd")))
-
-
-// const myTheacher = "Sasha";
-// const course = "frontend";
-
-// const group_17 = {
-//     myTheacher,
-//     course,
-//     count: 10
-// };
-// console.log(group_17);
+delete frontend.language_1;
+console.log(frontend);
 
 
-// const key = "test";
 
-// const getKey = function(){
-//     return "score";
-// };
-
-// const testResult = {
-//     [key]: "2", 
-//     [getKey()]: 22
-// };
-// console.log(testResult);
+// console.log(course);
+// console.log(console.log(console.log("hsdvhsbdvkbsd")))
 
 
-// //МЕТОДЫ ОБЪЕКТА
+const myTheacher = "Sasha";
+const course = "frontend";
+
+const group_17 = {
+    myTheacher,
+    course,
+    count: 10
+};
+console.log(group_17);
 
 
-// const myProducts = {
-//     milk: 0.5,
-//     eggs: 10,
-//     apples: 5,
-//     toCheck(){
-//         console.log("check na sklade");
-//     },
-//     oranges: 10,
-// };
-// myProducts.toCheck();
-// console.log(myProducts);
+const key = "test";
 
-// myProducts.toBuySweets = function(){
-//     console.log("Duy something sweet baby ");
-// };
-// myProducts.toBuySweets();
-// console.log(myProducts);
+const getKey = function(){
+    return "score";
+};
 
-// delete myProducts.toBuySweets;
-
-// console.log(myProducts);
-
-// const product = {
-//     tupe: "lksdlk",
-//     productName: "huinya",
-//     price: 99999999999999.99,
-//     showProdectName(){
-//         console.log(this.productName);
-//     },
-//     changePrice(value){
-//         this.price = value;
-//     }
-// };
-
-// product.showProdectName();
-// product.changePrice(392.3);
-// console.log(product);
+const testResult = {
+    [key]: "2", 
+    [getKey()]: 22
+};
+console.log(testResult);
 
 
-// //  ПЕРЕБОР ОБЪЕКТА
+//МЕТОДЫ ОБЪЕКТА
 
-// const myCars = {
-//     subaru: "Forester",
-//     mazda: "626",
-//     wolzvagen: "Golf",
-//     tesla: "modelX",
-//     product,
-// };
 
-// // for (const key in myCars){
-// //     console.log("key: ", key);
-// // }
+const myProducts = {
+    milk: 0.5,
+    eggs: 10,
+    apples: 5,
+    toCheck(){
+        console.log("check na sklade");
+    },
+    oranges: 10,
+};
+myProducts.toCheck();
+console.log(myProducts);
+
+myProducts.toBuySweets = function(){
+    console.log("Duy something sweet baby ");
+};
+myProducts.toBuySweets();
+console.log(myProducts);
+
+delete myProducts.toBuySweets;
+
+console.log(myProducts);
+
+const product = {
+    tupe: "lksdlk",
+    productName: "huinya",
+    price: 99999999999999.99,
+    showProdectName(){
+        console.log(this.productName);
+    },
+    changePrice(value){
+        this.price = value;
+    }
+};
+
+product.showProdectName();
+product.changePrice(392.3);
+console.log(product);
+
+
+//  ПЕРЕБОР ОБЪЕКТА
+
+const myCars = {
+    subaru: "Forester",
+    mazda: "626",
+    wolzvagen: "Golf",
+    tesla: "modelX",
+    product,
+};
 
 // for (const key in myCars){
-//     console.log("key: ", myCars[key]);
+//     console.log("key: ", key);
 // }
 
-// const hero = {
-//     name: "Stalin",
-//     power: "999999",
-//     typeOfPower: "communism",
-//     life:"without borders"
-// };
+for (const key in myCars){
+    console.log("key: ", myCars[key]);
+}
 
-// const keysOfHero = Object.keys(hero); //*******************************************************************************
-// console.log(keysOfHero);
+const hero = {
+    name: "Stalin",
+    power: "999999",
+    typeOfPower: "communism",
+    life:"without borders"
+};
 
-// for (const key of keysOfHero){
-//     console.log("key: ", key)
-//     console.log("value: ", hero[key]);
+const keysOfHero = Object.keys(hero); //*******************************************************************************
+console.log(keysOfHero);
 
-// }
+for (const key of keysOfHero){
+    console.log("key: ", key)
+    console.log("value: ", hero[key]);
 
-// const entriesOfHero = Object.entries(hero);
-// console.log("enteries of hero", entriesOfHero);
-// for (const entry of entriesOfHero){
-//     const key = entry[0];
-//     const value = entry[1];
+}
 
-//     console.log(`${key}: ${value}`);
+const entriesOfHero = Object.entries(hero);
+console.log("enteries of hero", entriesOfHero);
+for (const entry of entriesOfHero){
+    const key = entry[0];
+    const value = entry[1];
 
-// }
-// const valuesOfHero = Object.values(hero);
-// console.log("values of Hero", valuesOfHero);
+    console.log(`${key}: ${value}`);
+
+}
+const valuesOfHero = Object.values(hero);
+console.log("values of Hero", valuesOfHero);
 
 
 
@@ -291,3 +291,61 @@ const rgb1 = [200, 205, 100];
 let red1 , green1, blue1;
 [red1, green1, blue1] = rgb1;
 console.log(`red: ${red1}, Green: ${green1}, BLue: ${blue1}`);
+
+
+
+const hotel = {
+    hotelName:5,
+    stars:5,
+    capacity: 99
+};
+console.log(hotel);
+const {hotelName, stars,  status = 5} = hotel;
+console.log(hotel);
+
+
+
+console.log(hotelName, stars, status);
+let myProducts = {fruits: "apples", vegetable: "tomatoes",};
+console.log(myProducts.fruits);
+console.log(fruits);
+cosole.log(vegetable);
+
+
+
+
+
+const myTheacher = "lfdlkdflkdflk";
+const course = "front";
+const group ={
+
+};
+
+const hotel9 = {
+    name9 ="sdfdsf",
+    star9: 5,
+    fgfg: ""
+};
+console.log(hotel9);
+
+const {name9, ...rest} = hotel9;
+
+console.log(hotel9);
+
+const rgb = [200, 455, 100];
+const [red, green, blue] = rgb;
+
+
+const rgb2 = [200, 100, 255];
+const [ red2, green2, blue2, alfa2 =5 ] = rgb2;
+console.log(alfa2);
+
+
+const rgb3 = [233, 254, 999];
+const [red3, ...colors] = rgb3;
+console.log(red3);
+console.log(colors);
+console.log(rgb3);
+const rgb4 = [111, 222, 333];
+const [ , , blue4] = rgb4;
+console.log("blue4", blue4);
