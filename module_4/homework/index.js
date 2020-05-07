@@ -38,7 +38,7 @@ const inventory = {
   remove(itemName) {
     console.log(`Removing ${itemName} from inventory`);
  
-    this.items = this.items.filter(item => item !== itemName); бо
+    this.items = this.items.filter(item => item !== itemName); 
   },
 };
  
