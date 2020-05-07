@@ -1,72 +1,60 @@
 "use strict";
 console.log("TUSK_1");
-let pass;
-let homework = [];
-
-
-const homeworkIsDone = function(){
-    return pass = Number(confirm("Ну чо там с дз?"));
-};
-homeworkIsDone(pass, homework);
-if(pass === 1){
-    homework.push("homework is done!")
-}else{
-    homework.push("You must to pass the homework!");
+const homeworkIsDone = function(pass){
+  pass = Number(prompt());
+  if(pass === 1){
+    console.log("homework is done!");
+   
+  }else{
+    console.log("You must to pass homework!");
+  };
 }
-console.log(homework);
-console.log(pass);
-
-console.log("TUSK_2");
-
-const homeworkIsDone2 = () => {
-    pass = Number(confirm("Ну чо там с дз?"));
-    pass === 1 ? homework.splice(0, 1,"homework is done!") : homework.splice(0, 1,"You must to pass the homework!");
-};
-homeworkIsDone2(pass , homework);
-console.log(homework); 
-console.log(pass);
+homeworkIsDone();
 
 
+console.log("TUSK_2")
+
+const homeworkIsDone2 = (pass2) => {
+  pass2 = Number(prompt());
+  pass2 === 1 ? console.log("homework is done!") : console.log("You must to pass homework")
+}
+homeworkIsDone2();
 
 
-// ============== 3 ========================================
-// Напиши функцию findLongestWord(string), которая принимает параметром
-// произвольную строку (в строке будут только слова и пробелы)
-// и возвращает самое длинное слово в этой строке.
+console.log("TUSK_3")
 
-
-// Вызовы функции для проверки работоспособности твоей реализации.
-// console.log(
-  // var strSplit = str.split(' ');
-
-
-
-console.log("TUSK_3");
-const findLongestWord = function(str) {
-  let arrStr = str.split(' ');
-  let wordLength = 0;
-  let longestWord;
-
-  for (let i = 1; i < arrStr.length; i += 1) {
-    wordLength = arrStr[0].length;
-
-    if (arrStr[i].length > wordLength) {
+const findLongestWord = function(arrStr) {
+  arrStr = arrStr.split(' ');
+  // console.log(arrStr);
+  let longestWord = arrStr[0];
+  
+  for (let i = 0; i < arrStr.length; i += 1) {
+    if (arrStr[i].length > longestWord.length) {
       longestWord = arrStr[i];
       
-      return longestWord;
     }
-
+    
   }
+  return longestWord;
 };
 console.log(
-  findLongestWord("And by opposing end them. To die—to sleep, No more; and by a sleep to say we end") 
-); 
+  findLongestWord(
+    "And by opposing end them. To die—to sleep, No more; and by a sleep to say we end"
+  )
+); // opposing
+ 
 console.log(
-  findLongestWord("The heart-ache and the thousand natural shocks That flesh is heir to: 'tis a consummation") 
-); 
+  findLongestWord(
+    "The heart-ache and the thousand natural shocks That flesh is heir to: 'tis a consummation"
+  )
+); // consummation
+ 
 console.log(
-  findLongestWord("Devoutly to be wish'd. To die, to sleep; To sleep, perchance to dream—ay, there's the rub:") 
-); 
+  findLongestWord(
+    "Devoutly to be wish'd. To die, to sleep; To sleep, perchance to dream—ay, there's the rub:"
+  )
+); // perchance
+
 
 
 
@@ -81,8 +69,22 @@ const formatString = function(string){
   }
   return string;
 }
+ 
 console.log(formatString("Curabitur ligula sapien, tincidunt non."));
+// // вернется оригинальная строка
+ 
+console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."));
+// // вернется форматированная строка
+ 
+console.log(formatString("Curabitur ligula sapien."));
+// // вернется оригинальная строка
+ 
+console.log(
+  formatString(
+    "Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."
+  )
+);
+// вернется форматированная строка
 
-console.log(formatString("Vestibulum facilisis purus nec pulvinar iaculis."));
 
-console.log(formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."));
+

@@ -1,8 +1,8 @@
 "use strict";
 // OBJECT 
 const odject = {
-    key: value,
-    key: vlaue,
+    key: "value",
+    key: "vlaue",
 }
 
 const frontend = {
@@ -294,58 +294,58 @@ console.log(`red: ${red1}, Green: ${green1}, BLue: ${blue1}`);
 
 
 
-const hotel = {
-    hotelName:5,
-    stars:5,
-    capacity: 99
-};
-console.log(hotel);
-const {hotelName, stars,  status = 5} = hotel;
-console.log(hotel);
+// const hotel = {
+//     hotelName:5,
+//     stars:5,
+//     capacity: 99
+// };
+// console.log(hotel);
+// const {hotelName, stars,  status = 5} = hotel;
+// console.log(hotel);
 
 
 
 console.log(hotelName, stars, status);
-let myProducts = {fruits: "apples", vegetable: "tomatoes",};
-console.log(myProducts.fruits);
-console.log(fruits);
-cosole.log(vegetable);
+// let myProducts = {fruits: "apples", vegetable: "tomatoes",};
+// console.log(myProducts.fruits);
+// console.log(fruits);
+// cosole.log(vegetable);
 
 
 
 
 
-const myTheacher = "lfdlkdflkdflk";
-const course = "front";
-const group ={
+// const myTheacher = "lfdlkdflkdflk";
+// const course = "front";
+// const group ={
 
-};
+// };
 
-const hotel9 = {
-    name9 ="sdfdsf",
-    star9: 5,
-    fgfg: ""
-};
-console.log(hotel9);
+// const hotel9 = {
+//     name9 ="sdfdsf",
+//     star9: 5,
+//     fgfg: ""
+// };
+// console.log(hotel9);
 
-const {name9, ...rest} = hotel9;
+// const {name9, ...rest} = hotel9;
 
-console.log(hotel9);
+// console.log(hotel9);
 
-const rgb = [200, 455, 100];
-const [red, green, blue] = rgb;
-
-
-const rgb2 = [200, 100, 255];
-const [ red2, green2, blue2, alfa2 =5 ] = rgb2;
-console.log(alfa2);
+// const rgb = [200, 455, 100];
+// const [red, green, blue] = rgb;
 
 
-const rgb3 = [233, 254, 999];
-const [red3, ...colors] = rgb3;
-console.log(red3);
-console.log(colors);
-console.log(rgb3);
-const rgb4 = [111, 222, 333];
-const [ , , blue4] = rgb4;
-console.log("blue4", blue4);
+// const rgb2 = [200, 100, 255];
+// const [ red2, green2, blue2, alfa2 =5 ] = rgb2;
+// console.log(alfa2);
+
+
+// const rgb3 = [233, 254, 999];
+// const [red3, ...colors] = rgb3;
+// console.log(red3);
+// console.log(colors);
+// console.log(rgb3);
+// const rgb4 = [111, 222, 333];
+// const [ , , blue4] = rgb4;
+// console.log("blue4", blue4);
