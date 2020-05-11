@@ -1,7 +1,7 @@
 "use strict";
 // это импорт данных из файла users.js
 //(файл users.js нужно создать и скопировать в него массив, который указан в конце, после заданий)
-import * as allUsers from "./users.js";
+import * as allUsers from "/users.js";
 let users = allUsers.default;
 console.log("массив объектов пользователей", users);
  
