@@ -7,7 +7,7 @@ const Account = function(login, email){
   this.email = email;
 }
 // тут пиши метод конструктора в prototype 
-          Account.prototype.getInfo = function (sdf){
+          Account.prototype.getInfo = function (){
             console.log(`Login: ${this.login}, Email: ${this.email}`);
           }
 // тут проверка работоспособности кода
@@ -18,7 +18,7 @@ const poly = new Account('Poly','poly@mail.com');
 poly.getInfo(); // Login: Poly, Email: poly@mail.com
  
 
- 
+  
  
  
  

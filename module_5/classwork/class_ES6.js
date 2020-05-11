@@ -49,23 +49,23 @@ console.log(newHero_3);
 
 
 
-// class Hero_4 {
-//     constructor(name, xp){
-//         this.name = name;
-//         this.xp = xp;
-//     }
-//     changeName(name){
-//         this.name = name;
-//     }
-//     getName(){
-//         return console.log(this.name);
-//     }
-// }
+class Hero_4 {
+    constructor(name, xp){
+        this.name = name;
+        this.xp = xp;
+    }
+    changeName(name){
+        this.name = name;
+    }
+    getName(){
+        return console.log(this.name);
+    }
+}
 
-// const newHero_4 = new Hero_4("Danil", 1000);
-// console.log(newHero_4);
-// newHero_4.changeName("ALF");
-// newHero_4.getName();
+const newHero_4 = new Hero_4("Danil", 1000);
+console.log(newHero_4);
+newHero_4.changeName("ALF");
+newHero_4.getName();
 
 
 
