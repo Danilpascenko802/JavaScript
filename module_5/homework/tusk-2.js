@@ -47,7 +47,7 @@ class Storage {
     for(i = 0; i < this.items.length; i +=1){
       
       if(this.items[i] === item){
-        return this.items.splice(indx, 0);
+        return this.items.splice(indx, indx);
       }
     };
   };
@@ -77,16 +77,24 @@ console.table(storage.items); // [ "Нанитоиды", "Железные жу�
 // Метод pad(str) - получает параметр str (строку) и добавляет ее в начало и в конец _value
 class StringBuilder {
   constructor(str){
-    this._string = str;
+    this._value = [];
+    this._value.push(str)
   };
   get value(){
-    return this._string
+    return this._value.join("");
   }
   append(str){
-    return this._string.push(str);
+    this._value.push(str);
+    this._value.join("") 
   }
   prepend(str){
-    this._string.unshift(str);
+   this._value.unshift(str)
+   return this._value.join("") 
+  }
+  pad(str){
+    this._value.unshift(str);
+    this._value.push(str)
+
   }
 
 }
@@ -103,63 +111,108 @@ console.log(builder.value); // '^.^'
  
 builder.pad('=');
 console.log(builder.value); // '=^.^='
-// // Задание 4
-// // Напиши класс Car с указанными свойствами и методами.
-// class Car {
-//   // Добавь статический метод `getSpecs(car)`,
-//   // который принимает объект-машину как параметр и выводит
-//   // в консоль значения свойств maxSpeed, speed, isOn, distance и price.
+// Задание 4
+// Напиши класс Car с указанными свойствами и методами.
+class Car {
+  static getSpecs(car){
+    console.log("maxSpeed:",car.maxSpeed)
+    console.log("speed:",car.speed)
+    console.log("isOn:",car.isOn)
+    console.log("distance:",car.distance)
+    console.log("price:",car.price)
+  }
+  // Добавь статический метод `getSpecs(car)`,
+  // который принимает объект-машину как параметр и выводит
+  // в консоль значения свойств maxSpeed, speed, isOn, distance и price.
  
-//   // Конструктор получает объект настроек.
-//   // Добавь свойства будущего экземпляра класса:
-//   //  speed - текущая скорость, изначально 0
-//   // price - цена автомобиля
-//   // maxSpeed - максимальная скорость
-//   // isOn - заведен ли автомобиль, значения true или false. Изначально false
-//   // distance - общий километраж, изначально 0
-//   constructor() {}
-//   // Добавь геттер и сеттер для свойства price,
-//   // который будет работать с свойством цены автомобиля.
+  // Конструктор получает объект настроек.
+  // Добавь свойства будущего экземпляра класса:
+  //  speed - текущая скорость, изначально 0
+  // price - цена автомобиля
+  // maxSpeed - максимальная скорость
+  // isOn - заведен ли автомобиль, значения true или false. Изначально false
+  // distance - общий километраж, изначально 0
+  constructor(maxSpeed, price, speed = 0, distance = 0,  isOn = false, ){
+    this.speed = speed;
+    this.price = price;
+    this.maxSpeed = maxSpeed;
+    this.isOn = isOn;
+    this.distance = distance;
+  }
+  get _price(){
+    return this.price;
+  };
+  set _price(price){
+    return this.price === price;
+  }
+  // Добавь геттер и сеттер для свойства price,
+  // который будет работать с свойством цены автомобиля.
  
-//   // Добавь код для того чтобы завести автомобиль
-//   // Записывает в свойство isOn значение true
-//   turnOn() {}
+  // Добавь код для того чтобы завести автомобиль
+  // Записывает в свойство isOn значение true
+  turnOn(){
+    return this.isOn = true;
+  }
  
-//   // Добавь код для того чтобы заглушить автомобиль
-//   // Записывает в свойство isOn значение false,
-//   // и сбрасывает текущую скорость в 0
-//   turnOff() {}
+  // Добавь код для того чтобы заглушить автомобиль
+  // Записывает в свойство isOn значение false,
+  // и сбрасывает текущую скорость в 0
+  turnOff(){
+    this.isOn = false;
+    this.speed = 0;
+  }
  
-//   // Добавляет к свойству speed полученное значение,
-//   // при условии что результирующая скорость
-//   // не больше чем значение свойства maxSpeed
-//   accelerate(value) {}
+  // Добавляет к свойству speed полученное значение,
+  // при условии что результирующая скорость
+  // не больше чем значение свойства maxSpeed
+  accelerate(value){
+    this.speed =+ value
+    if(this.speed  <= this.maxSpeed){
+      return this.speed 
+    }else{
+      return "ERROR!!! this speed is imposible for this car";
+    }
+  }
  
-//   // Отнимает от свойства speed полученное значение,
-//   // при условии что результирующая скорость не меньше нуля
-//   decelerate(value) {}
+  // Отнимает от свойства speed полученное значение,
+  // при условии что результирующая скорость не меньше нуля
+  decelerate(value){
+    this.speed === this.speed - value
+    if(this.speed < 0){
+      return "ERROR!!! this speed is imposible for this car"
+    }else{
+     return this.speed;
+    }
+  }
  
-//   // Добавляет в поле distance киллометраж (hours * speed),
-//   // но только в том случае если машина заведена!
-//   drive(hours) {}
-// }
+  // Добавляет в поле distance киллометраж (hours * speed),
+  // но только в том случае если машина заведена!
+  drive(hours){
+    if(this.isOn === true){
+      this.distance = hours * this.speed;
+      return this.distance;
+    };
+    
+  }
+
+}
  
-// const mustang = new Car(200, 2000);
+const mustang = new Car(200, 2000);
  
-// mustang.turnOn();
-// mustang.accelerate(50);
-// mustang.drive(2);
+mustang.turnOn();
+mustang.accelerate(50);
+mustang.drive(2);
  
-// Car.getSpecs(mustang);
-// // maxSpeed: 200, speed: 50, isOn: true, distance: 100, price: 2000
+Car.getSpecs(mustang);
+// maxSpeed: 200, speed: 50, isOn: true, distance: 100, price: 2000
  
-// mustang.decelerate(20);
-// mustang.drive(1);
-// mustang.turnOff();
+mustang.decelerate(20);
+mustang.drive(1);
+mustang.turnOff();
+ console.log("")
+Car.getSpecs(mustang);
+// maxSpeed: 200, speed: 0, isOn: false, distance: 130, price: 2000
  
-// Car.getSpecs(mustang);
-// // maxSpeed: 200, speed: 0, isOn: false, distance: 130, price: 2000
- 
-// console.log(mustang.price); // 2000
-// mustang.price = 4000;
-// console.log(mustang.price); // 4000
+console.log(mustang.price); // 2000
+mustang.price = 4000;
+console.log(mustang.price); // 4000
